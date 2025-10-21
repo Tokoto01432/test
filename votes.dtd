@@ -1,0 +1,5 @@
+<!ELEMENT votes (vote+)>
+<!ELEMENT vote (voterID, candidate, time)>
+<!ELEMENT voterID (#PCDATA)>
+<!ELEMENT candidate (#PCDATA)>
+<!ELEMENT time (#PCDATA)>

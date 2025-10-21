@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+  <title>Vote - Online Voting Station</title>
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 30px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      width: 320px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin: auto;
+    }
+    label, select, input {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    a {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #007bff;
+    }
+  </style>
+  <script type="text/javascript" src="script.js" defer="defer"></script>
+</head>
+
+<body>
+  <h2 style="text-align:center;">🗳️ Cast Your Vote</h2>
+
+  <form id="voteForm">
+    <label for="voterID">Voter ID:</label>
+    <input type="text" id="voterID" name="voterID" required="required" />
+
+    <label for="candidate">Select Candidate:</label>
+    <select id="candidate" name="candidate" required="required">
+      <option value="">--Choose Candidate--</option>
+      <option value="John Smith">John Smith</option>
+      <option value="Maria Nkosi">Maria Nkosi</option>
+      <option value="Ahmed Patel">Ahmed Patel</option>
+    </select>
+
+    <input type="submit" value="Submit Vote" />
+  </form>
+
+  <a href="index.html">⬅ Back to Home</a>
+</body>
+</html>
